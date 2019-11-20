@@ -1,10 +1,12 @@
-﻿package com.test;
+package com.test;
 
 /**
  * @Creater banyahui
  * @Date 2019/11/19 下午 14:03
- * @Description notepad add description
+ * @Description 变量
  */
 public class demo2 {
-	//test commit *
+    public static void main(String[] args) {
+        System.out.println("main");
+    }
 }
