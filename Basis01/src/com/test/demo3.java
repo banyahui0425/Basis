@@ -7,6 +7,19 @@ package com.test;
  */
 public class demo3 {
     public static void main(String[] args) {
-        System.out.println("123");
+        int i1=111;
+        byte b1 = (byte) i1;
+        System.out.println("b1 = " + b1);
+        
+        byte b2=28;
+        int i2=b2;
+        System.out.println("i2 = " + i2);
+
+
+        byte b3=(byte)'A';
+        System.out.println("b3 = " + b3);
+
+        int i3=(int)'㍨';
+        System.out.println("i3 = " + i3);
     }
 }
