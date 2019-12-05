@@ -1,6 +1,6 @@
 package com.test3;
 
-import com.bean.TestClass;
+import com.dao.TestClass;
 
 import java.io.*;
 

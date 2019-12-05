@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
  * @Description junit
  */
 public class demo1 {
-
     @Test
     public void juTest() {
         System.out.println("true = " + true);

@@ -1,6 +1,6 @@
 package com.test;
 
-import com.bean.People;
+import com.dao.People;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -11,7 +11,7 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class demo2 {
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        Class aClass = Class.forName("com.bean.People");
+        Class aClass = Class.forName("com.dao.People");
         Object o = aClass.getDeclaredConstructor(new Class[]{String.class }).newInstance(new Object[]{"张三" });
         People p=(People) o;
         System.out.println("p.getName() = " + p.getName());

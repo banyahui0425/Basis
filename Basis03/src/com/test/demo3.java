@@ -1,11 +1,11 @@
 package com.test;
 
-import com.bean.MyTest;
+import com.dao.MyTest;
 
 /**
  * @Creater banyahui
  * @Date 2019/11/25 下午 21:48
- * @Description
+ * @Description 自定义注解
  */
 public class demo3 {
     @MyTest
