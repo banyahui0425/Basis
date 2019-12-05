@@ -1,4 +1,4 @@
-package com.bean;
+package com.dao;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

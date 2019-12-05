@@ -21,5 +21,18 @@ public class demo4 {
             int age = resultSet.getInt(3);
             System.out.println("age = " + age);
         }
+
+        System.out.println("----------------------");
+        PreparedStatement sta2=con.prepareStatement("select * from user where id=? ");
+        sta2.setInt(1,2);
+        ResultSet resultSet2 = sta2.executeQuery();
+        while (resultSet2.next()) {
+            int id = resultSet2.getInt(1);
+            System.out.println("id = " + id);
+            String name = resultSet2.getString(2);
+            System.out.println("name = " + name);
+            int age = resultSet2.getInt(3);
+            System.out.println("age = " + age);
+        }
     }
 }

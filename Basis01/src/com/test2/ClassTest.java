@@ -1,7 +1,7 @@
 package com.test2;
 
-import com.bean.People;
-import com.bean.Student;
+import com.dao.People;
+import com.dao.Student;
 
 /**
  * @Creater banyahui
