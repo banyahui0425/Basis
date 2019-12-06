@@ -21,5 +21,8 @@ public class demo10 {
         char[] chars={'b','a','n','y','a'};
         String sss=new String(chars);
         System.out.println("sss = " + sss);
+
+        String a = "xtmjltq".substring(1,4);
+        System.out.println("a = " + a);
     }
 }
