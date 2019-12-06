@@ -26,5 +26,6 @@ public class demo10 {
         System.out.println("a = " + a);
 
         System.out.println("test branch...");
+        System.out.println("test branch2...");
     }
 }
