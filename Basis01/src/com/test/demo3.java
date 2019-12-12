@@ -15,6 +15,8 @@ public class demo3 {
         int i2=b2;
         System.out.println("i2 = " + i2);
 
+        byte bc=(byte) ( b2+1);
+        System.out.println("bc = " + bc);
 
         byte b3=(byte)'A';
         System.out.println("b3 = " + b3);

@@ -22,7 +22,7 @@ public class demo1 {
         System.out.println(p.equals(p2));
 
         People p3=p;
-        System.out.println(p.equals(p3));
-        System.out.println(p==p3);
+        System.out.println(p2.equals(p3));
+        System.out.println(p2==p3);
     }
 }

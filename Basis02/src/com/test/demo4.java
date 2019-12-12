@@ -14,6 +14,5 @@ public class demo4 {
 
         Properties properties = System.getProperties();
         System.out.println("properties = " + properties);
-
     }
 }

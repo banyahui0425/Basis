@@ -2,6 +2,7 @@ package com.test;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
 
 /**
  * @Creater banyahui
@@ -13,6 +14,10 @@ public class demo3 {
         Calendar calendar=Calendar.getInstance();
         int weekYear = calendar.getWeekYear();
         System.out.println("weekYear = " + weekYear);
+
+        TimeZone timeZone = calendar.getTimeZone();
+        String id = timeZone.getID();
+        System.out.println("id = " + id);
 
         Date time = calendar.getTime();
         System.out.println("time = " + time);

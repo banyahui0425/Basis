@@ -29,11 +29,9 @@ public class demo8 {
             }
         };
 
-        service.submit(runnable);
-
-        service.submit(runnable);
-
-        service.submit(runnable);
-
+        for (int i = 0; i < 10; i++) {
+            service.submit(runnable);
+        }
+        System.out.println("-------------------------");
     }
 }

@@ -1,5 +1,7 @@
 package com.test;
 
+import java.util.ArrayList;
+
 /**
  * @Creater banyahui
  * @Date 2019/11/20 下午 15:12
@@ -25,7 +27,13 @@ public class demo10 {
         String a = "xtmjltq".substring(1,4);
         System.out.println("a = " + a);
 
-        System.out.println("test branch...");
-        System.out.println("test branch2...");
+        String join = String.join("-", "A", "B");
+        System.out.println("join = " + join);
+
+        ArrayList<String> lists=new ArrayList<>();
+        lists.add("i");lists.add("love");
+        lists.add("you");
+        String join1 = String.join("&", lists);
+        System.out.println("join1 = " + join1);
     }
 }

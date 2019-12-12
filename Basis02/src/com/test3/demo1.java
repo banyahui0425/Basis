@@ -3,6 +3,7 @@ package com.test3;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 /**
  * @Creater banyahui
@@ -25,6 +26,14 @@ public class demo1 {
         };
         con.andThen(cthen).accept(123);
 
+        Supplier<Integer> supplier = new Supplier<>() {
+            @Override
+            public Integer get() {
+                return 123;
+            }
+        };
+        Integer integer = supplier.get();
+        System.out.println("integer = " + integer);
 
         Function<String,Integer> funs=new Function<String, Integer>() {
             @Override

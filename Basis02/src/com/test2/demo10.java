@@ -22,6 +22,7 @@ public class demo10 {
 
         new Thread(() -> {
             System.out.println("jian tou xiancheng...");
+            show();
         }).start();
 
         List<Integer> lists = new ArrayList<>();
@@ -60,5 +61,9 @@ public class demo10 {
             }
         };
 
+    }
+
+    private  static  void  show(){
+        System.out.println("function...");
     }
 }

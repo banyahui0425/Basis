@@ -16,5 +16,20 @@ public class demo9 {
 
         datas.remove(0);
         System.out.println("datas = " + datas);
+
+        for (Integer data : datas) {
+            System.out.println("data = " + data);
+        }
+
+        System.out.println("---------------------");
+        for (Integer data : datas) {
+            System.out.println("data2 = " + data);
+//            if(data==998){
+//                System.out.println("998 = " + 998);
+//                datas.remove(Integer.valueOf(998));
+//            }
+        }
+
+
     }
 }

@@ -22,6 +22,8 @@ public class demo4 {
             System.out.println("age = " + age);
         }
 
+        Statement statement = con.createStatement();
+
         System.out.println("----------------------");
         PreparedStatement sta2=con.prepareStatement("select * from user where id=? ");
         sta2.setInt(1,2);
@@ -34,5 +36,8 @@ public class demo4 {
             int age = resultSet2.getInt(3);
             System.out.println("age = " + age);
         }
+
+
+
     }
 }

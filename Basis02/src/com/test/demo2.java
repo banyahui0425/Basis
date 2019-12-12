@@ -1,6 +1,7 @@
 package com.test;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -16,5 +17,12 @@ public class demo2 {
         SimpleDateFormat sf=new SimpleDateFormat("yyyyMMdd");
         String sdata = sf.format(date);
         System.out.println("sdata = " + sdata);
+
+        Calendar calendar=Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.DATE,-1);
+
+        String format = sf.format(calendar.getTime());
+        System.out.println("format = " + format);
     }
 }

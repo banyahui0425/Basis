@@ -17,8 +17,18 @@ public class demo4 {
         i2--;
         System.out.println("i2 = " + i2);
 
+        int i8=0;
+        i8+=i1;
+        System.out.println("i8 = " + i8);
+
         boolean b1=i1>i2;
         System.out.println("b1 = " + b1);
+
+        boolean b = i1 == i2;
+        System.out.println("b = " + b);
+
+        boolean b2 = i1 != i2;
+        System.out.println("b2 = " + b2);
 
         int i3=i1>i2?100:99;
         System.out.println("i3 = " + i3);
