@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>居中研究 margin 塌陷解决方案 加父盒子触发bfc</title>
+    <style type="text/css">
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.ofh{
+    overflow: hidden;
+}
+
+.box{
+    background: lightgrey;
+    margin: 20px;
+    border: solid 1px red;
+}
+.pa1{
+    text-align: center;
+}
+p{
+    display: inline-block;
+    background: lightblue;
+}
+
+        .bot{
+            text-align: center;
+        }
+        .ct{
+            display: inline-block;
+            padding-left: 4px;
+            overflow: hidden;
+            background: teal;
+        }
+        .ct a,.ct span{
+            float: left;
+            margin-right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ofh">
+        <div class="box pa1">
+            <p>123</p>
+        </div>
+    </div>
+
+    <div class="ofh">
+        <div class="box pa1">
+            <p>456</p>
+        </div>
+    </div>
+
+     <div class="box bot">
+         <div class="ct"><a>网址地图</a><span>|</span><a>网址地图</a><span>|</span><a>网址地图</a><span>|</span><a>网址地图</a><span>|</span></div>
+     </div>
+</body>
+</html>
